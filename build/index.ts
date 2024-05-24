@@ -1,3 +1,3 @@
-import * as dotenv from "dotenv";
-dotenv.config();
 console.log("Welcome to Powerhouse mirror");
+import mirror from "./mirror";
+mirror();
