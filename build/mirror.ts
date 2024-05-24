@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/rest";
-import fetch from "node-fetch";
 import * as dotenv from "dotenv";
+import fetch from "node-fetch";
 dotenv.config();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -8,7 +8,7 @@ if (!GITHUB_TOKEN) {
   throw new Error("GITHUB_TOKEN is required");
 }
 
-const GITHUB_REPO_OWNER = "0x4007";
+const GITHUB_REPO_OWNER = "powerhouse-inc";
 const GITHUB_REPO_NAME = "powerhouse-mirror";
 
 const octokit = new Octokit({ auth: GITHUB_TOKEN });
