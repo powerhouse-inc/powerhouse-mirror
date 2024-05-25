@@ -1,3 +1,5 @@
+// cspell:ignore Gfug, Kzfq, pccg,
+
 import { Octokit } from "@octokit/rest";
 import * as dotenv from "dotenv";
 import fetch from "node-fetch";
