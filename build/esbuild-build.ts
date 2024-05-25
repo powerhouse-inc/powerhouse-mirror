@@ -7,6 +7,7 @@ const entries = [
 ];
 
 export const esBuildContext: esbuild.BuildOptions = {
+  platform: "node",
   sourcemap: true,
   entryPoints: entries,
   bundle: true,

@@ -78,7 +78,7 @@ async function createGitHubIssue(title: string, body: string) {
   }
 }
 
-async function main() {
+export default async function main() {
   try {
     const issueData = await fetchIssueData();
     await createGitHubIssue(issueData.title, issueData.description);
@@ -86,5 +86,3 @@ async function main() {
     console.error("Error in main function:", error);
   }
 }
-
-void main();
